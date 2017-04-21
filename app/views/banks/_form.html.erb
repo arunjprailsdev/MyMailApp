@@ -1,0 +1,116 @@
+<%= form_for(bank) do |f| %>
+  <% if bank.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(bank.errors.count, "error") %> prohibited this bank from being saved:</h2>
+
+      <ul>
+      <% bank.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :PostDate %>
+    <%= f.date_select :PostDate %>
+  </div>
+
+  <div class="field">
+    <%= f.label :BankName %>
+    <%= f.text_field :BankName %>
+  </div>
+
+  <div class="field">
+    <%= f.label :PostName %>
+    <%= f.text_field :PostName %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Qualification %>
+    <%= f.text_field :Qualification %>
+  </div>
+
+  <div class="field">
+    <%= f.label :LastDate %>
+    <%= f.date_select :LastDate %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Description %>
+    <%= f.text_area :Description %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Qualification_desc %>
+    <%= f.text_area :Qualification_desc %>
+  </div>
+
+  <div class="field">
+    <%= f.label :TotalPost %>
+    <%= f.number_field :TotalPost %>
+  </div>
+
+  <div class="field">
+    <%= f.label :AgeLimit %>
+    <%= f.text_area :AgeLimit %>
+  </div>
+
+  <div class="field">
+    <%= f.label :SelectionProcess %>
+    <%= f.text_area :SelectionProcess %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ApplicationFees %>
+    <%= f.text_area :ApplicationFees %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ApplyLink %>
+    <%= f.text_area :ApplyLink %>
+  </div>
+
+  <div class="field">
+    <%= f.label :LastDate %>
+    <%= f.date_select :LastDate %>
+  </div>
+
+  <div class="field">
+    <%= f.label :LastDateOnlineApplication %>
+    <%= f.date_select :LastDateOnlineApplication %>
+  </div>
+
+  <div class="field">
+    <%= f.label :CallLetter %>
+    <%= f.text_area :CallLetter %>
+  </div>
+
+  <div class="field">
+    <%= f.label :CallLetterLink %>
+    <%= f.text_area :CallLetterLink %>
+  </div>
+
+  <div class="field">
+    <%= f.label :DateofExam %>
+    <%= f.date_select :DateofExam %>
+  </div>
+
+  <div class="field">
+    <%= f.label :HowtoApply %>
+    <%= f.text_area :HowtoApply %>
+  </div>
+
+  <div class="field">
+    <%= f.label :OfficialNotification %>
+    <%= f.text_area :OfficialNotification %>
+  </div>
+<div class="field">
+    <%= f.label :user %>
+    <%= f.number_field :user_id %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

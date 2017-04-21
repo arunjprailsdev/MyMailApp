@@ -1,0 +1,43 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  PostDate: 2017-04-17
+  BankName: MyString
+  PostName: MyString
+  Qualification: MyString
+  LastDate: 2017-04-17
+  Description: MyText
+  Qualification_desc: MyText
+  TotalPost: 1
+  AgeLimit: MyText
+  SelectionProcess: MyText
+  ApplicationFees: MyText
+  ApplyLink: MyText
+  LastDate: 2017-04-17
+  LastDateOnlineApplication: 2017-04-17
+  CallLetter: MyText
+  CallLetterLink: MyText
+  DateofExam: 2017-04-17
+  HowtoApply: MyText
+  OfficialNotification: MyText
+
+two:
+  PostDate: 2017-04-17
+  BankName: MyString
+  PostName: MyString
+  Qualification: MyString
+  LastDate: 2017-04-17
+  Description: MyText
+  Qualification_desc: MyText
+  TotalPost: 1
+  AgeLimit: MyText
+  SelectionProcess: MyText
+  ApplicationFees: MyText
+  ApplyLink: MyText
+  LastDate: 2017-04-17
+  LastDateOnlineApplication: 2017-04-17
+  CallLetter: MyText
+  CallLetterLink: MyText
+  DateofExam: 2017-04-17
+  HowtoApply: MyText
+  OfficialNotification: MyText

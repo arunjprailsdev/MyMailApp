@@ -1,0 +1,106 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Postdate:</strong>
+  <%= @bank.PostDate %>
+</p>
+
+<p>
+  <strong>Bankname:</strong>
+  <%= @bank.BankName %>
+</p>
+
+<p>
+  <strong>Postname:</strong>
+  <%= @bank.PostName %>
+</p>
+
+<p>
+  <strong>Qualification:</strong>
+  <%= @bank.Qualification %>
+</p>
+
+<p>
+  <strong>Lastdate:</strong>
+  <%= @bank.LastDate %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @bank.Description %>
+</p>
+
+<p>
+  <strong>Qualification desc:</strong>
+  <%= @bank.Qualification_desc %>
+</p>
+
+<p>
+  <strong>Totalpost:</strong>
+  <%= @bank.TotalPost %>
+</p>
+
+<p>
+  <strong>Agelimit:</strong>
+  <%= @bank.AgeLimit %>
+</p>
+
+<p>
+  <strong>Selectionprocess:</strong>
+  <%= @bank.SelectionProcess %>
+</p>
+
+<p>
+  <strong>Applicationfees:</strong>
+  <%= @bank.ApplicationFees %>
+</p>
+
+<p>
+  <strong>Applylink:</strong>
+  <%= @bank.ApplyLink %>
+</p>
+
+<p>
+  <strong>Lastdate:</strong>
+  <%= @bank.LastDate %>
+</p>
+
+<p>
+  <strong>Lastdateonlineapplication:</strong>
+  <%= @bank.LastDateOnlineApplication %>
+</p>
+
+<p>
+  <strong>Callletter:</strong>
+  <%= @bank.CallLetter %>
+</p>
+
+<p>
+  <strong>Callletterlink:</strong>
+  <%= @bank.CallLetterLink %>
+</p>
+
+<p>
+  <strong>Dateofexam:</strong>
+  <%= @bank.DateofExam %>
+</p>
+
+<p>
+  <strong>Howtoapply:</strong>
+  <%= @bank.HowtoApply %>
+</p>
+
+<p>
+  <strong>Officialnotification:</strong>
+  <%= @bank.OfficialNotification %>
+</p>
+<p>
+  <strong>User:</strong>
+  <%= @bank.user_id %>
+</p>
+<h2>Comments</h2>
+<%=  render @bank.comments %>
+<br>
+<%= render "comments/form"%>
+<%= link_to 'Edit', edit_bank_path(@bank) %> |
+<%= link_to 'Back', banks_path %>
